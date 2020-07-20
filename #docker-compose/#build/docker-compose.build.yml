@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  build-check:
+    build: .
+    container_name: build-assembly
+    volumes:
+      - ../../Sushidiet/Webapps/check.smartdom:/app/
+
+  build-recette:
+    build: .
+    container_name: build-quinsac
+    volumes:
+      - ../../Sushidiet/Webapps/recette.smartdom:/app/
