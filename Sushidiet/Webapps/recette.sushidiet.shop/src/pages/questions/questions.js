@@ -213,7 +213,7 @@ sendMail(){
                                        className="form-control mt-2"
                                 />
                                 <button onClick={() => this.sendMail()}
-                                        className={item.selected === "true" ? "btn btn-outline-success mt-1 active" : "btn btn-outline-success inactive mt-1"}
+                                        className={item.selected === "true" ? "btn btn-outline-danger mt-1 active" : "btn btn-outline-danger inactive mt-1"}
                                         style={{width: "80%", marginTop: "10%"}}>Recevoir L'evaluation par email</button>
                             </div>
 

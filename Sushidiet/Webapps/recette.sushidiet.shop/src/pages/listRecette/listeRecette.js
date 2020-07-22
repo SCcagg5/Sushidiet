@@ -9,6 +9,15 @@ import sushi from "../../assets/images/sushi.jpg"
 
 import hourglass from "../../assets/images/hourglass.svg"
 import chef_hat from "../../assets/images/chef_hat.svg"
+import nutriscoreA from "../../assets/images/nutriscore/Nutri-score-A.svg"
+import nutriscoreB from "../../assets/images/nutriscore/Nutri-score-B.svg"
+import nutriscoreC from "../../assets/images/nutriscore/Nutri-score-C.svg"
+import nutriscoreD from "../../assets/images/nutriscore/Nutri-score-D.svg"
+import nutriscoreE from "../../assets/images/nutriscore/Nutri-score-E.svg"
+
+
+
+
 
 import ClampLines from 'react-clamp-lines';
 
@@ -76,19 +85,19 @@ class listeRecette extends Component {
         const nutriscore=
             {
                 A:{
-                    color:"#038141"
+                    image:nutriscoreA
                 },
                 B:{
-                    color:"#85bb2f"
+                    image:nutriscoreB
                 },
                 C:{
-                    color:"#fecb02"
+                    image:nutriscoreC
                 },
                 D:{
-                    color:"#ee8100"
+                    image:nutriscoreD
                 },
                 E:{
-                    color:"#e63e11"
+                    image:nutriscoreE
                 }
             }
 
@@ -246,11 +255,11 @@ class listeRecette extends Component {
                                             <div className="card-body">
 
                                                <div className="row justify-content-between">
-                                                   <div className="col-md-10">
+                                                   <div className="col-md-8">
                                                 <h5 className="card-title">{item.nomRecette}</h5>
                                                    </div>
-                                                   <div  style={{position:"relative",paddingTop:5,paddingBottom:5,backgroundColor:nutriscore[item.NUTRISCORE].color ,borderRadius:100,width:25,height:35,textAlign:"center"}}>
-                                                       <h3  style={{color:"white",position:"absolute",left:4.1}} className="card-title"> {item.NUTRISCORE}</h3>
+                                                   <div  className="col-md-4">
+                                                       <img src={nutriscore[item.NUTRISCORE].image} style={{width:"100%"}} alt=""/>
                                                    </div>
                                                </div>
 
