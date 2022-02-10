@@ -17,7 +17,7 @@
     "metismenujs": "^1.0.3",
     "moment": "^2.24.0",
     "morris.js": "^0.5.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nuka-carousel": "^4.6.6",
     "pdf-viewer-reactjs": "^2.0.2",
     "popper.js": "^1.16.1",
